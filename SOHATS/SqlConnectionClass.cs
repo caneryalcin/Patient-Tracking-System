@@ -16,8 +16,7 @@ namespace SOHATS
     {
         List<string> processes = new List<string>(); //processes in hospital and their fees
 
-        /*"Data Source=DESKTOP-QSVT225;Initial Catalog=SOHATS;Persist Security Info=True;User ID=sa;Password=zinagafsa29"*/
-        //static string connectionAddress =  @"Server=.\;Database=SOHATS;User Id=sa;;Password=zinagafsa29";
+     
         static string connectionAddress = @"Server=.\;Database=SOHATS;Trusted_Connection=True";
         public SqlConnection connection = new SqlConnection(connectionAddress);
         SqlDataAdapter sda;
